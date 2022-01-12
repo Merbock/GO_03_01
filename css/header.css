@@ -1,0 +1,21 @@
+.header {
+  padding-top: 30px;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__btn {
+  padding: 12px 32px;
+  border: 3px solid #cd06ff;
+  border-radius: 10px;
+  background-color: transparent;
+  color: inherit;
+  text-transform: uppercase;
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 700;
+}

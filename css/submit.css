@@ -1,0 +1,10 @@
+.submit__btn {
+  display: block;
+  margin-left: auto;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #6c0287;
+  padding: 16px 41px 16px 42px;
+  border: none;
+  border-radius: 10px;
+}

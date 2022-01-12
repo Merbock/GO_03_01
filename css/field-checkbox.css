@@ -1,0 +1,28 @@
+.field-checkbox__label {
+  position: relative;
+  padding-left: 37px;
+  font-size: 22px;
+  line-height: 25px;
+  font-weight: 400;
+}
+
+.field-checkbox__label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #fff;
+  width: 25px;
+  height: 25px;
+  padding: 7px;
+}
+
+.field-checkbox__input:checked + .field-checkbox__label:after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 6px;
+  width: 13px;
+  height: 13px;
+  background-color: green;
+}

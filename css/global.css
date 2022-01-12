@@ -1,0 +1,76 @@
+html {
+  position: relative;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #1b1a1b;
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #fff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  display: inline-block;
+  vertical-align: top;
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+ul,
+p,
+figure,
+fieldset {
+  margin: 0;
+}
+
+fieldset {
+  padding: 0;
+  border: none;
+}
+
+iframe {
+  border: none;
+}
+
+address {
+  font-style: normal;
+}
+
+section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+blockquote {
+  margin: 0;
+}

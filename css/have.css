@@ -1,0 +1,42 @@
+.have__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 20px;
+}
+
+.have__item {
+  flex-basis: 380px;
+  background-repeat: no-repeat;
+  min-height: 228px;
+  padding: 166px 40px 6px;
+}
+
+.have__item--one {
+  background-image: url("../img/have-1.jpg");
+}
+
+.have__item--two {
+  background-image: url("../img/have-2.jpg");
+}
+
+.have__item--three {
+  background-image: url("../img/have-3.jpg");
+}
+
+.have__item--four {
+  background-image: url("../img/have-4.jpg");
+}
+
+.have__item--five {
+  background-image: url("../img/have-5.jpg");
+}
+
+.have__item--six {
+  background-image: url("../img/have-6.jpg");
+}
+
+.have__text {
+  max-width: 262px;
+  font-size: 20px;
+  line-height: 28px;
+}

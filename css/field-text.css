@@ -1,0 +1,13 @@
+.field-text__label {
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 6px;
+}
+
+.field-text__input {
+  width: 100%;
+  min-height: 52px;
+  padding: 0 8px;
+  font-size: 18px;
+  line-height: 46px;
+}

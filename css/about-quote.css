@@ -1,0 +1,44 @@
+.about-quote__text {
+  position: relative;
+  margin-bottom: 40px;
+  padding-left: 31px;
+  max-width: 425px;
+  font-size: 44px;
+  line-height: 50px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.about-quote__cite {
+  background-image: url("../img/cite-avatar.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 80px;
+  padding-left: 110px;
+  max-width: 345px;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.about-quote__text:before,
+.about-quote__text:after {
+  position: absolute;
+  font-size: 44px;
+  line-height: 50px;
+  font-weight: 900;
+  color: #6c0287;
+}
+
+.about-quote__text:before {
+  content: "“";
+  left: 0;
+  top: -13px;
+}
+
+.about-quote__text:after {
+  content: "”";
+  right: 35px;
+}
