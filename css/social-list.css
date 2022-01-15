@@ -14,18 +14,18 @@
   height: 50px;
 }
 
-.social-list__link--ig {
-  background-image: url("../img/icons/instagram.svg");
+.social-list__link:hover svg path {
+  fill: #eadeed;
 }
 
-.social-list__link--vk {
-  background-image: url("../img/icons/vk.svg");
+.social-list__link:focus {
+  outline: 1px solid #cd06ff;
 }
 
-.social-list__link--fb {
-  background-image: url("../img/icons/facebook.svg");
+.social-list__link:focus svg path {
+  fill: #eadeed;
 }
 
-.social-list__link--tg {
-  background-image: url("../img/icons/telegram.svg");
+.social-list__link:active svg path {
+  fill: #cd06ff;
 }

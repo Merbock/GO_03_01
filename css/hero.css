@@ -40,7 +40,7 @@
 }
 
 .hero__accent {
-  color: #CD06FF;
+  color: #cd06ff;
   margin-bottom: 10px;
 }
 
@@ -81,10 +81,35 @@
   line-height: 30px;
 }
 
+.hero__btn:hover,
+.hero__btn:focus {
+  background-color: #840aa3;
+}
+
+.hero__btn:active {
+  background-color: #640aa3;
+}
+
 .hero__link {
   position: absolute;
   left: 50%;
   bottom: 90px;
   transform: translateX(-50%);
   z-index: 1;
+}
+
+.hero__link:hover .hero__svg {
+  fill: #fff;
+}
+
+.hero__link:hover .hero__svg rect{
+  fill: #6c0287;
+}
+
+.hero__link:focus {
+  outline: 1px solid #cd06ff;
+}
+
+.hero__link:active .hero__svg {
+  fill: #cd06ff;
 }

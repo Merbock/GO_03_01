@@ -12,6 +12,10 @@
   appearance: none;
 }
 
+.field-select__input:focus {
+  outline: 3px solid #cd06ff;
+}
+
 .field-select:after {
   content: "";
   position: absolute;

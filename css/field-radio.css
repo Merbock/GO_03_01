@@ -23,12 +23,26 @@
   border-radius: 8px;
 }
 
+.field-radio__label:hover {
+  background-color: #eadeed;
+  outline: 3px solid #640aa3;
+}
+
+.field-radio__label:focus {
+  outline: 3px solid #640aa3;
+}
+
+.field-radio__label:active {
+  background-color: #eadeed;
+}
+
 .field-radio__label-console {
   position: relative;
   padding-left: 39px;
   font-size: 22px;
   line-height: 25px;
   font-weight: 400;
+  outline: none;
 }
 
 .field-radio__label-console:before {
@@ -52,4 +66,9 @@
   height: 13px;
   border-radius: 50%;
   background-color: green;
+}
+
+.field-radio__label-console:focus:before {
+  outline-offset: 2px;
+  outline: 1px solid #cd06ff;
 }

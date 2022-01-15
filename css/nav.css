@@ -9,3 +9,15 @@
   font-weight: 400;
   text-transform: uppercase;
 }
+
+.nav__link:hover {
+  color: #840aa3;
+}
+
+.nav__link:focus {
+  outline: 1px solid #cd06ff;
+}
+
+.nav__link:active {
+  color: #6c0287;
+}

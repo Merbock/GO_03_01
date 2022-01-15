@@ -4,6 +4,7 @@
   font-size: 22px;
   line-height: 25px;
   font-weight: 400;
+  outline: none;
 }
 
 .field-checkbox__label:before {
@@ -25,4 +26,9 @@
   width: 13px;
   height: 13px;
   background-color: green;
+}
+
+.field-checkbox__label:focus:before {
+  outline-offset: 2px;
+  outline: 1px solid #cd06ff;
 }

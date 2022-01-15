@@ -8,3 +8,16 @@
   border: none;
   border-radius: 10px;
 }
+
+.submit__btn:hover {
+  background-color: #eadeed;
+  outline: 3px solid #640aa3;
+}
+
+.submit__btn:focus {
+  outline: 3px solid #640aa3;
+}
+
+.submit__btn:active {
+  background-color: #eadeed;
+}

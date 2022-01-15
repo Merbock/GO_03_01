@@ -10,4 +10,9 @@
   padding: 0 8px;
   font-size: 18px;
   line-height: 46px;
+  outline: none;
+}
+
+.field-text__input:focus {
+  outline: 3px solid #cd06ff;
 }

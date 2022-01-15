@@ -48,6 +48,21 @@
   margin-bottom: 11px;
 }
 
+.footer__tel:hover,
+.footer__mail:hover {
+  color: #cd06ff;
+}
+
+.footer__tel:focus,
+.footer__mail:focus {
+  outline: 1px solid #cd06ff;
+}
+
+.footer__tel:active,
+.footer__mail:active {
+  color: #6c0287;
+}
+
 .footer__mail {
   background-image: url("../img/icons/envelope.svg");
 }
