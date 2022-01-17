@@ -15,5 +15,5 @@
 }
 
 .field-text__input:focus {
-  outline: 3px solid #cd06ff;
+  outline: 3px solid var(--accent-color);
 }

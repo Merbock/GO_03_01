@@ -12,13 +12,13 @@
 }
 
 .nav__link:hover {
-  color: #840aa3;
+  color: var(--bg-hover-two);
 }
 
 .nav__link:focus {
-  outline: 1px solid #cd06ff;
+  outline: 1px solid var(--accent-color);
 }
 
 .nav__link:active {
-  color: #6c0287;
+  color: var(--bg-hover);
 }

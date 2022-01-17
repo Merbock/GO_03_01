@@ -40,7 +40,7 @@
 }
 
 .hero__accent {
-  color: #cd06ff;
+  color: var(--accent-color);
   margin-bottom: 10px;
 }
 
@@ -74,7 +74,7 @@
 
 .hero__btn {
   padding: 25px 69px;
-  background-color: #6c0287;
+  background-color: var(--bg-hover);
   border-radius: 10px;
   text-transform: uppercase;
   font-size: 26px;
@@ -84,11 +84,11 @@
 
 .hero__btn:hover,
 .hero__btn:focus {
-  background-color: #840aa3;
+  background-color: var(--bg-hover-two);
 }
 
 .hero__btn:active {
-  background-color: #640aa3;
+  background-color: var(--bg-click);
 }
 
 .hero__link {
@@ -114,17 +114,17 @@
 }
 
 .hero__link:hover .hero__svg {
-  background-color: #fff;
+  background-color: var(--main-color);
 }
 
 .hero__link:hover .hero__svg rect{
-  fill: #6c0287;
+  fill: var(--bg-hover);
 }
 
 .hero__link:focus {
-  outline: 1px solid #cd06ff;
+  outline: 1px solid var(--accent-color);
 }
 
 .hero__link:active .hero__svg {
-  background-color: #cd06ff;
+  background-color: var(--accent-color);
 }

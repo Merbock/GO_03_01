@@ -13,12 +13,12 @@ body {
   min-width: 320px;
   min-height: 100vh;
   margin: 0;
-  background-color: #1b1a1b;
+  background-color: var(--main-bg);
   font-family: Arial, sans-serif;
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
-  color: #fff;
+  color: var(--main-color);
 }
 
 img {

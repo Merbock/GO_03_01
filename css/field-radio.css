@@ -4,11 +4,11 @@
   z-index: 100;
   padding: 0 45px;
   border-radius: 8px;
-  background-color: #fff;
+  background-color: var(--main-color);
   font-size: 30px;
   line-height: 54px;
   text-transform: uppercase;
-  color: #000;
+  color: var(--secondary-color);
   cursor: pointer;
   transition: background-color .2s linear, outline .2s linear;
 }
@@ -25,16 +25,16 @@
 }
 
 .field-radio__label:hover {
-  background-color: #eadeed;
-  outline: 3px solid #640aa3;
+  background-color: var(--bg-hover-three);
+  outline: 3px solid var(--bg-click);
 }
 
 .field-radio__label:focus {
-  outline: 3px solid #640aa3;
+  outline: 3px solid var(--bg-click);
 }
 
 .field-radio__label:active {
-  background-color: #eadeed;
+  background-color: var(--bg-hover-three);
 }
 
 .field-radio__label-console {
@@ -44,7 +44,6 @@
   line-height: 25px;
   font-weight: 400;
   outline: none;
-  /*transition: outline .5s linear, outline-offset .5s linear;*/
 }
 
 .field-radio__label-console:before {
@@ -52,7 +51,7 @@
   position: absolute;
   left: 0;
   top: 0;
-  background-color: #fff;
+  background-color: var(--main-color);
   width: 27px;
   height: 27px;
   border-radius: 50%;
@@ -73,5 +72,5 @@
 
 .field-radio__label-console:focus:before {
   outline-offset: 2px;
-  outline: 1px solid #cd06ff;
+  outline: 1px solid var(--accent-color);
 }

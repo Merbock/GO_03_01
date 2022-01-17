@@ -12,7 +12,7 @@
   position: absolute;
   left: 0;
   top: 0;
-  background-color: #fff;
+  background-color: var(--main-color);
   width: 25px;
   height: 25px;
   padding: 7px;
@@ -31,5 +31,5 @@
 
 .field-checkbox__label:focus:before {
   outline-offset: 2px;
-  outline: 1px solid #cd06ff;
+  outline: 1px solid var(--accent-color);;
 }

@@ -1,5 +1,5 @@
 .book {
-  background-color: #440f51;
+  background-color: var(--secondary-bg);
   padding: 80px 0;
 }
 

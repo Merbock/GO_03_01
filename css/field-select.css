@@ -14,7 +14,7 @@
 }
 
 .field-select__input:focus {
-  outline: 3px solid #cd06ff;
+  outline: 3px solid var(--accent-color);
 }
 
 .field-select:after {
@@ -25,7 +25,7 @@
   transform: translateY(-50%);
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
-  border-top: 15px solid #000;
+  border-top: 15px solid var(--secondary-color);
   z-index: 1000;
 }
 

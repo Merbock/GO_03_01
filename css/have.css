@@ -1,3 +1,7 @@
+.have {
+  padding-bottom: 120px;
+}
+
 .have__list {
   display: flex;
   flex-wrap: wrap;
@@ -16,11 +20,17 @@
   transform: scale(1.1);
 }
 
+.have__item--two:hover,
+.have__item--five:hover {
+  transform: scale(1.1) translateY(70px);
+}
+
 .have__item--one {
   background-image: url("../img/have-1.jpg");
 }
 
 .have__item--two {
+  transform: translateY(70px);
   background-image: url("../img/have-2.jpg");
 }
 
@@ -33,6 +43,7 @@
 }
 
 .have__item--five {
+  transform: translateY(70px);
   background-image: url("../img/have-5.jpg");
 }
 

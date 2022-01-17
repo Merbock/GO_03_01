@@ -3,7 +3,7 @@
   margin-left: auto;
   text-transform: uppercase;
   font-weight: 700;
-  color: #6c0287;
+  color: var(--bg-hover);
   padding: 16px 41px 16px 42px;
   border: none;
   border-radius: 10px;
@@ -11,14 +11,14 @@
 }
 
 .submit__btn:hover {
-  background-color: #eadeed;
-  outline: 3px solid #640aa3;
+  background-color: var(--bg-hover-three);
+  outline: 3px solid var(--bg-click);
 }
 
 .submit__btn:focus {
-  outline: 3px solid #640aa3;
+  outline: 3px solid var(--bg-click);
 }
 
 .submit__btn:active {
-  background-color: #eadeed;
+  background-color: var(--bg-hover-three);
 }
