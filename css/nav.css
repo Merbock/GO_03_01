@@ -8,6 +8,7 @@
   line-height: 50px;
   font-weight: 400;
   text-transform: uppercase;
+  transition: color .2s linear;
 }
 
 .nav__link:hover {

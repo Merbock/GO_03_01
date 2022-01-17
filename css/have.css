@@ -9,6 +9,11 @@
   background-repeat: no-repeat;
   min-height: 228px;
   padding: 166px 40px 6px;
+  transition: transform .3s linear;
+}
+
+.have__item:hover {
+  transform: scale(1.1);
 }
 
 .have__item--one {

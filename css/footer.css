@@ -48,6 +48,11 @@
   margin-bottom: 11px;
 }
 
+.footer__tel,
+.footer__mail {
+  transition: color .2s linear, outline .2s linear;
+}
+
 .footer__tel:hover,
 .footer__mail:hover {
   color: #cd06ff;

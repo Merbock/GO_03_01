@@ -11,6 +11,7 @@
   font-size: 18px;
   line-height: 46px;
   outline: none;
+  transition: outline .2s linear;
 }
 
 .field-text__input:focus {

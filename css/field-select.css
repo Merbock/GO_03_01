@@ -10,6 +10,7 @@
   font-size: 18px;
   line-height: 28px;
   appearance: none;
+  transition: outline .2s linear;
 }
 
 .field-select__input:focus {
