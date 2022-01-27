@@ -3,16 +3,13 @@
 }
 
 .have__list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 40px 20px;
 }
 
 .have__item {
-  flex-basis: 380px;
-  background-repeat: no-repeat;
-  min-height: 228px;
-  padding: 166px 40px 6px;
+  position: relative;
   transition: transform .3s linear;
 }
 
@@ -25,34 +22,105 @@
   transform: scale(1.1) translateY(70px);
 }
 
-.have__item--one {
-  background-image: url("../img/have-1.jpg");
-}
-
-.have__item--two {
-  transform: translateY(70px);
-  background-image: url("../img/have-2.jpg");
-}
-
-.have__item--three {
-  background-image: url("../img/have-3.jpg");
-}
-
-.have__item--four {
-  background-image: url("../img/have-4.jpg");
-}
-
+.have__item--two,
 .have__item--five {
   transform: translateY(70px);
-  background-image: url("../img/have-5.jpg");
 }
 
-.have__item--six {
-  background-image: url("../img/have-6.jpg");
+.have__img {
+  display: block;
 }
 
 .have__text {
+  position: absolute;
+  bottom: 34px;
+  left: 40px;
+  right: 40px;
   max-width: 262px;
   font-size: 20px;
   line-height: 28px;
+}
+
+.have__text--two,
+.have__text--five {
+  bottom: 6px;
+}
+
+@media (max-width: 1240px) {
+  .have {
+    padding-bottom: 93px;
+  }
+
+  .have__list {
+    gap: 30px 20px;
+  }
+
+  .have__text {
+    left: 20px;
+    right: 20px;
+  }
+
+  .have__item--two,
+  .have__item--five {
+    transform: translateY(53px);
+  }
+
+  .have__text {
+    bottom: 23px;
+  }
+
+  .have__text--two,
+  .have__text--five {
+    bottom: 0;
+  }
+}
+
+@media (max-width: 930px) {
+  .have {
+    padding: 40px 0 30px;
+  }
+
+  .have__list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .have__item {
+    transform: unset;
+  }
+
+  .have__text {
+    max-width: 330px;
+    left: 30px;
+    bottom: 40px;
+  }
+
+  .have__text--two,
+  .have__text--five {
+    bottom: 12px;
+  }
+
+  .have__item--two:hover,
+  .have__item--five:hover {
+    transform: scale(1.1);
+  }
+}
+
+@media (max-width: 600px) {
+  .have {
+    padding: 23px 0 15px;
+  }
+
+  .have__list {
+    gap: 10px;
+  }
+
+  .have__text {
+    top: 30px;
+    left: 10px;
+    right: 10px;
+    max-width: 107px;
+    font-size: 10px;
+    line-height: 14px;
+  }
 }

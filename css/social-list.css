@@ -1,6 +1,6 @@
 .social-list__item {
   display: inline-block;
-  margin-right: 26px;
+  margin-right: 20px;
   vertical-align: top;
 }
 
@@ -34,3 +34,36 @@
 .social-list__link:active svg path {
   fill: var(--accent-color);
 }
+
+@media (max-width: 1240px) {
+  .social-list__svg,
+  .social-list__link {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 930px) {
+  .social-list {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .social-list__svg,
+  .social-list__link {
+    width: 30px;
+    height: 30px;
+  }
+
+  .social-list__item {
+    margin-right: 16px;
+  }
+
+  .social-list {
+    margin-bottom: 36px;
+  }
+}
+
+
+

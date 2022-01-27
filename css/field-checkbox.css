@@ -33,3 +33,48 @@
   outline-offset: 2px;
   outline: 1px solid var(--accent-color);;
 }
+
+@media (max-width: 1000px) {
+  .field-checkbox__label:before {
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .field-checkbox__input:checked + .field-checkbox__label:after {
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+  }
+
+  .field-checkbox__label {
+    padding-left: 60px;
+  }
+}
+
+@media (max-width: 710px) {
+
+  .field-checkbox__label:before {
+    width: 30px;
+    height: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .field-checkbox__input:checked + .field-checkbox__label:after {
+    width: 15px;
+    height: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 8px;
+  }
+
+  .field-checkbox__label {
+    padding-left: 50px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+}

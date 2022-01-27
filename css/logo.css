@@ -1,0 +1,23 @@
+.logo__img {
+  display: block;
+}
+
+@media (max-width: 1240px) {
+  .logo__img {
+    width: 87px;
+    height: 55px;
+  }
+}
+
+@media (max-width: 930px) {
+  .logo {
+    order: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .logo__img {
+    width: 66px;
+    height: 42px;
+  }
+}

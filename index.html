@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" type="image/svg+xml" href="img/favicons/icon.svg">
@@ -16,9 +17,12 @@
     <div class="container">
       <div class="header__inner">
         <a class="logo" href="#">
-          <img src="img/logo.svg" alt="Логотип GO" width="120" height="66">
+          <img class="logo__img" src="img/icons/logo.svg" alt="Логотип GO" width="120" height="66">
         </a>
         <nav class="nav">
+          <button class="nav__burger" type="button">
+            <span class="nav__burger-line"></span>
+          </button>
           <ul class="nav__list">
             <li class="nav__item">
               <a href="#halls" class="nav__link">залы</a>
@@ -59,7 +63,7 @@
             </div>
           </div>
           <a class="hero__btn" href="#book">Забронировать</a>
-          <a class="hero__link" href="#book">
+          <a class="hero__link" href="#have">
             <svg class="hero__svg" width="97" height="97" viewBox="0 0 97 97" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="48.5" cy="48.5" r="48" stroke="white"/>
               <rect x="34.4255" y="43.9162" width="1.82001" height="20.0201" transform="rotate(-44.9975 34.4255 43.9162)" fill="white"/>
@@ -70,26 +74,32 @@
       </div>
     </section>
 
-    <section class="have">
+    <section class="have" id="have">
       <div class="container">
         <h2 class="have__title title">У нас есть все для классного отдыха с друзьями!</h2>
         <ul class="have__list">
           <li class="have__item have__item--one">
+            <img class="have__img" src="img/have-1.jpg" alt="мужчина в vr очках" width="380" height="228">
             <p class="have__text">VR очки</p>
           </li>
           <li class="have__item have__item--two">
-            <p class="have__text">Аудио-система 5.1 <br> с отличным звуком</p>
+            <img class="have__img" src="img/have-2.jpg" alt="человек настраивает аудио" width="380" height="228">
+            <p class="have__text have__text--two">Аудио-система 5.1 <br> с отличным звуком</p>
           </li>
           <li class="have__item have__item--three">
-            <p class="have__text">Караоке (4 микрофона)</p>
+            <img class="have__img" src="img/have-3.jpg" alt="девушка поёт в микрофон" width="380" height="228">
+            <p class="have__text have__text--three">Караоке (4 микрофона)</p>
           </li>
           <li class="have__item have__item--four">
+            <img class="have__img" src="img/have-4.jpg" alt="люди играют в настольные игры" width="380" height="228">
             <p class="have__text">Настольные игры</p>
           </li>
           <li class="have__item have__item--five">
-            <p class="have__text">Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko</p>
+            <img class="have__img" src="img/have-5.jpg" alt="монитор с логотипом" width="380" height="228">
+            <p class="have__text have__text--five">Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko</p>
           </li>
           <li class="have__item have__item--six">
+            <img class="have__img" src="img/have-6.jpg" alt="игровая консоль" width="380" height="228">
             <p class="have__text">РlаyStаtiоn 5</p>
           </li>
         </ul>
@@ -100,10 +110,22 @@
       <div class="container">
         <h2 class="halls__title title">Наши залы</h2>
         <ul class="halls__list">
-          <li class="halls__item halls__item--vibe">80's vibes</li>
-          <li class="halls__item halls__item--wars">Star wars</li>
-          <li class="halls__item halls__item--west">Wild west</li>
-          <li class="halls__item halls__item--neon">Neon style</li>
+          <li class="halls__item halls__item--vibe">
+            <img class="halls__img" src="img/hall-1.jpg" alt="зал в стиле 80-ых" width="580" height="349">
+            <p class="halls__text">80's vibes</p>
+          </li>
+          <li class="halls__item halls__item--vibe">
+            <img class="halls__img" src="img/hall-2.jpg" alt="зал в стиле звёздных войн" width="580" height="349">
+            <p class="halls__text">Star wars</p>
+          </li>
+          <li class="halls__item halls__item--vibe">
+            <img class="halls__img" src="img/hall-3.jpg" alt="зал в стиле дикий запад" width="580" height="349">
+            <p class="halls__text">wild west</p>
+          </li>
+          <li class="halls__item halls__item--vibe">
+            <img class="halls__img" src="img/hall-4.jpg" alt="неоновый зал" width="580" height="349">
+            <p class="halls__text">neon style</p>
+          </li>
         </ul>
       </div>
     </section>
@@ -115,25 +137,25 @@
           <fieldset class="book__group book-group book-group--top">
             <legend class="book-group__legend">Выбери зал</legend>
             <ul class="book-group__list">
-              <li class="book-group__item field-radio">
+              <li class="book-group__item-button field-radio">
                 <input class="field-radio__input visually-hidden" type="radio" name="hall-name" value="80's vibes" id="hall-1" checked>
                 <label class="field-radio__label" for="hall-1" tabindex="0">80’s vibes</label>
               </li>
-              <li class="book-group__item field-radio">
+              <li class="book-group__item-button field-radio">
                 <input class="field-radio__input visually-hidden" type="radio" name="hall-name" value="Star wars" id="hall-2">
                 <label class="field-radio__label" for="hall-2" tabindex="0">Star wars</label>
               </li>
-              <li class="book-group__item field-radio">
+              <li class="book-group__item-button field-radio">
                 <input class="field-radio__input visually-hidden" type="radio" name="hall-name" value="wild west" id="hall-3">
                 <label class="field-radio__label" for="hall-3" tabindex="0">wild west</label>
               </li>
-              <li class="book-group__item field-radio">
+              <li class="book-group__item-button field-radio">
                 <input class="field-radio__input visually-hidden" type="radio" name="hall-name" value="neon style" id="hall-4">
                 <label class="field-radio__label" for="hall-4" tabindex="0">neon style</label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="book__group book-group book-group--line">
+          <fieldset class="book__group book-group book-group--line book-group--middle">
             <legend class="book-group__legend">Собери набор развлечений</legend>
             <fieldset class="book__group book-group">
               <legend class="book-group__title">Приставка:</legend>
@@ -158,7 +180,7 @@
             </fieldset>
             <fieldset class="book__group book-group">
               <legend class="book-group__title">Настольные игры</legend>
-              <ul class="book-group__list book-group__list--column">
+              <ul class="book-group__list book-group__list--column book-group__list--middle">
                 <li class="book-group__item field-checkbox">
                   <input class="field-checkbox__input visually-hidden" type="checkbox" name="board-game" value="jenga" id="jenga">
                   <label class="field-checkbox__label" for="jenga" tabindex="0">Jenga</label>
@@ -197,18 +219,21 @@
               <legend class="visually-hidden">Дата, время и количество человек</legend>
               <ul class="book-group__list-date">
                 <li class="book-group__item field-select">
+                  <label for="select-date" class="visually-hidden">Выберите дату</label>
                   <select class="field-select__input" name="select-date" id="select-date">
                     <option hidden value="date">Дата</option>
                     <option value="14 december">14 декабря</option>
                   </select>
                 </li>
                 <li class="book-group__item field-select">
+                  <label for="select-time" class="visually-hidden">Выберите время</label>
                   <select class="field-select__input" name="select-time" id="select-time">
                     <option hidden value="time">Время</option>
                     <option value="18:00">18:00</option>
                   </select>
                 </li>
                 <li class="book-group__item field-select">
+                  <label for="select-people" class="visually-hidden">Выберите количество человек</label>
                   <select class="field-select__input field-select__input--people" name="select-people" id="select-people">
                     <option hidden value="people">Сколько человек</option>
                     <option value="2">2</option>
@@ -218,7 +243,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="book__group book-group book-group--date">
+            <fieldset class="book__group book-group book-group--name">
               <legend class="visually-hidden">Имя и фамилия</legend>
               <ul class="book-group__list-name">
                 <li class="book-group__item field-text">
@@ -231,7 +256,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="book__group book-group book-group--date">
+            <fieldset class="book__group book-group book-group--contacts">
               <legend class="visually-hidden">Телефон и email</legend>
               <ul class="book-group__list-contacts">
                 <li class="book-group__item field-text">
@@ -257,23 +282,17 @@
         <h2 class="about__title title">О нас</h2>
         <div class="about__box">
           <div class="about__img">
-            <img src="img/about-1.jpg" alt="девушка в vr очках" width="300" height="206">
-            <img src="img/about-2.jpg" alt="изображение каких-то элементов" width="300" height="206">
-            <img src="img/about-3.jpg" alt="fifa 21 на мониторе и светильник" width="164" height="224">
-            <img src="img/about-4.jpg" alt="игровая приставка" width="180" height="224">
-            <img src="img/about-5.jpg" alt="джойстик" width="256" height="224">
-            <img src="img/about-6.jpg" alt="мужчина с микрофоном" width="380" height="166">
-            <img src="img/about-7.jpg" alt="мужчина в vr очках" width="220" height="166">
+            <img src="img/photos.png" alt="коллаж из наших фотографий" width="600" height="596">
           </div>
           <div class="about__info">
             <p class="about__text">Для наших гостей мы создали концептуально новое игровое пространство виртуальной реальности <br> в центральной части города.</p>
             <p class="about__text">Каждый день мы стараемся создавать <br> для вас самую лучшую игровую атмосферу <br> и радовать Вас топовыми игровыми разработками <br> со всего мира.</p>
-            <div>
-              <blockquote class="about__quote about-quote">
-                <p class="about-quote__text">GAME OVER &mdash; это место незабываемых впечатлений</p>
-                <cite class="about-quote__cite">Аркадий Абакшин, создатель игровой территории GAME OVER</cite>
-              </blockquote>
-            </div>
+          </div>
+          <div class="about__wrap">
+            <blockquote class="about__quote about-quote">
+              <p class="about-quote__text">GAME OVER &mdash; это место незабываемых впечатлений</p>
+              <cite class="about-quote__cite">Аркадий Абакшин,<br> создатель игровой территории GAME OVER</cite>
+            </blockquote>
           </div>
         </div>
       </div>
@@ -365,9 +384,9 @@
       <div class="footer__inner">
         <div class="footer__top">
           <address class="footer__address">
-            <p class="footer__place">г.Москва ул.Аквамарина, 16</p>
+            <p class="footer__place">г. Москва <br> ул. Усачёва, 29 к3</p>
             <div class="footer__info">
-              <a class="footer__tel" href="tel:89509302893">8 (950) 930 - 28 - 93</a>
+              <a class="footer__tel" href="tel:89509302893">8 (950) <span>930 - 28 - 93</span></a>
               <a class="footer__mail" href="mailto:GameOver@gmail.com">GameOver@gmail.com</a>
             </div>
             <ul class="footer__social social-list">
@@ -401,9 +420,7 @@
               </li>
             </ul>
           </address>
-          <div class="footer__map">
-            <img src="img/map.jpg" alt="мы на карте" width="680" height="274">
-          </div>
+          <div class="footer__map"></div>
         </div>
         <div class="footer__bottom">
           <p class="footer__copy">© Game Over, 2022</p>

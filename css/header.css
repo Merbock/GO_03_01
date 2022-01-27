@@ -30,3 +30,30 @@
 .header__btn:active {
   background-color: var(--bg-click);
 }
+
+@media (max-width: 1240px) {
+  .header__btn {
+    padding: 8px 26px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 930px) {
+  .header__btn {
+    padding: 8px 26px;
+    font-size: 18px;
+    line-height: 24px;
+    order: 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    padding: 20px 0;
+  }
+
+  .header__btn {
+    display: none;
+  }
+}

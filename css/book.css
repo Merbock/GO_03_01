@@ -7,3 +7,29 @@
   flex-grow: 1;
 }
 
+@media (max-width: 1240px) {
+  .book {
+    padding: 60px 0;
+  }
+}
+
+@media (max-width: 930px) {
+  .book {
+    padding: 50px 0;
+  }
+
+  .book__title {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .book {
+    padding: 30px 0;
+  }
+
+  .book__title {
+    margin-bottom: 15px;
+  }
+}
+

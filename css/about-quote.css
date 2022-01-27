@@ -1,6 +1,6 @@
 .about-quote__text {
   position: relative;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   padding-left: 31px;
   max-width: 425px;
   font-size: 44px;
@@ -10,12 +10,10 @@
 }
 
 .about-quote__cite {
-  background-image: url("../img/cite-avatar.png");
-  background-repeat: no-repeat;
-  background-position: left center;
+  position: relative;
   display: inline-block;
   vertical-align: top;
-  margin-left: 80px;
+  margin-left: 110px;
   padding-left: 110px;
   max-width: 345px;
   font-size: 20px;
@@ -23,11 +21,22 @@
   font-style: normal;
 }
 
+.about-quote__cite:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url("../img/cite-avatar.png");
+  background-repeat: no-repeat;
+  width: 80px;
+  height: 80px;
+}
+
 .about-quote__text:before,
 .about-quote__text:after {
   position: absolute;
   font-size: 44px;
-  line-height: 50px;
   font-weight: 900;
   color: var(--bg-hover);
 }
@@ -35,10 +44,81 @@
 .about-quote__text:before {
   content: "“";
   left: 0;
-  top: -13px;
+  top: -9px;
 }
 
 .about-quote__text:after {
   content: "”";
-  right: 35px;
+  padding-left: 13px;
+}
+
+@media (max-width: 1240px) {
+  .about-quote__text {
+    padding-left: 20px;
+    margin-bottom: 22px;
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .about-quote__cite {
+    max-width: 311px;
+    padding-left: 100px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .about-quote__cite:before {
+    background-image: url("../img/cite-avatar(1024).png");
+    width: 70px;
+    height: 70px;
+  }
+
+  .about-quote__text:before,
+  .about-quote__text:after {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .about-quote__text {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .about-quote__cite {
+    margin-left: auto;
+    display: block;
+  }
+
+  .about-quote__text {
+    max-width: 666px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-quote__text {
+    max-width: 420px;
+    padding-left: 15px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .about-quote__cite {
+    margin-left: unset;
+    padding-left: 67px;
+    max-width: 276px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .about-quote__cite:before {
+    background-image: url("../img/cite-avatar(320).png");
+    width: 56px;
+    height: 56px;
+  }
+
+  .about-quote__text:before,
+  .about-quote__text:after {
+    font-size: 22px;
+  }
 }

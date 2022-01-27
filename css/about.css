@@ -1,8 +1,16 @@
+.about {
+  padding: 100px 0;
+}
+
 .about__text {
-  margin-bottom: 40px;
+  margin-bottom: 31px;
   font-size: 20px;
   font-weight: 400;
   max-width: 500px;
+}
+
+.about__text:last-child {
+  margin-bottom: 0;
 }
 
 .about__quote {
@@ -10,16 +18,160 @@
 }
 
 .about__box {
-  display: flex;
+  display: grid;
+  grid-template-areas:
+    'img text'
+    'img cite';
 }
 
 .about__img{
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 600px;
+  grid-area: img;
   margin-right: 80px;
 }
 
+.about__img img {
+  display: block;
+}
+
 .about__info {
-  max-width: 500px;
+  grid-area: text;
+  margin-bottom: 57px;
+}
+
+.about__wrap {
+  grid-area: cite;
+}
+
+.about__wrap--tablet {
+  display: none;
+}
+
+@media (max-width: 1240px) {
+  .about {
+    padding: 70px 0;
+  }
+
+  .about__title {
+    margin-bottom: 26px;
+  }
+
+  .about__img {
+    width: 420px;
+    margin-right: 40px;
+  }
+
+  .about__img img {
+    display: block;
+  }
+
+  .about__info {
+    margin-bottom: 38px;
+  }
+
+  .about__text {
+    margin-bottom: 25px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .about {
+    padding: 60px 0;
+  }
+
+  .about__info {
+    align-self: center;
+    margin-bottom: 0;
+  }
+
+  .about__box {
+    grid-template-areas:
+    'img img text'
+    'cite cite cite';
+    row-gap: 48px;
+  }
+
+  .about__img {
+    width: unset;
+    margin-right: 0;
+  }
+
+  .about__text {
+    font-size: 16px;
+    line-height: 22px;
+    max-width: 306px;
+    padding-left: 28px;
+  }
+
+  .about__text:last-child {
+    margin-bottom: 0;
+  }
+
+  .about__text br {
+    display: none;
+  }
+
+  .about__wrap--tablet {
+    display: block;
+    width: 100%;
+  }
+
+  .about__wrap--tablet .about-quote__text {
+    max-width: 666px;
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .about__wrap--tablet .about-quote__cite {
+    display: block;
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .about {
+    padding: 29px 0;
+  }
+
+  .about__title {
+    margin-bottom: 16px;
+  }
+
+  .about__box {
+    grid-template-areas:
+        'text text text'
+        'img img img'
+        'cite cite cite';
+    row-gap: 15px;
+  }
+
+  .about__info {
+    order: 0;
+    width: 100%;
+  }
+
+  .about__img {
+    order: 1;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .about__wrap--tablet {
+    order: 2;
+  }
+
+  .about__text {
+    max-width: unset;
+    padding-left: 0;
+    margin-bottom: 15px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+@media (max-width: 320px) {
+  .about__text:last-child br:last-child {
+    display: block;
+  }
 }

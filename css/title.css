@@ -1,8 +1,35 @@
 .title {
-  margin: 0 auto 40px;
+  margin: 0 auto 43px;
   max-width: 882px;
   font-size: 40px;
   line-height: 50px;
   text-transform: uppercase;
   text-align: center;
+}
+
+@media (max-width: 1240px) {
+  .title {
+    margin-bottom: 36px;
+    max-width: 521px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 930px) {
+  .title {
+    margin-bottom: 30px;
+    max-width: 521px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+@media (max-width: 600px) {
+  .title {
+    margin-bottom: 15px;
+    max-width: 300px;
+    font-size: 14px;
+    line-height: 18px;
+  }
 }

@@ -1,16 +1,23 @@
 .field-select {
   position: relative;
   flex-grow: 1;
+  background-color: var(--main-color);
 }
 
 .field-select__input {
+  position: relative;
+  z-index: 10000;
   width: 134px;
   min-height: 52px;
-  padding: 0 27px 0 20px;
+  padding: 0 40px 0 20px;
+  background-color: transparent;
+  border: none;
   font-size: 18px;
-  line-height: 28px;
+  line-height: 52px;
   appearance: none;
   transition: outline .2s linear;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .field-select__input:focus {
@@ -32,4 +39,38 @@
 .field-select__input--people {
   flex-grow: 1;
   width: 100%;
+}
+
+@media (max-width: 1000px) {
+  .field-select {
+    flex-grow: 0;
+  }
+
+  .field-select:last-child {
+    margin-left: auto;
+  }
+
+  .field-select__input--people {
+    width: 300px;
+  }
+}
+
+@media (max-width: 710px) {
+  .field-select {
+    flex-grow: 0;
+  }
+
+  .field-select:last-child {
+    margin-left: unset;
+    width: 100%;
+    flex-grow: 1;
+  }
+
+  .field-select__input--people {
+    width: 100%;
+  }
+
+  .field-select__input {
+    font-size: 14px;
+  }
 }
